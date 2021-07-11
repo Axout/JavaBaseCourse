@@ -39,6 +39,6 @@ public class Palindrome {
 
     public static String palindrome2(String str) {
         StringBuilder stringBuilder = new StringBuilder(str);
-        return str.compareTo(stringBuilder.reverse().toString()) == 0 ? "Yes" : "No";
+        return str.equals(stringBuilder.reverse().toString()) ? "Yes" : "No";
     }
 }
