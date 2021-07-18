@@ -1,4 +1,4 @@
-package _3_5_Abstract_classes;
+package _3_5_Abstract_classes.Task1;
 
 import java.util.Scanner;
 import java.util.function.DoubleUnaryOperator;

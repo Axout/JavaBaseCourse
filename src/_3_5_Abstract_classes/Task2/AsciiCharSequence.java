@@ -1,4 +1,4 @@
-package _3_5_Abstract_classes;
+package _3_5_Abstract_classes.Task2;
 
 /*
 Напишите класс AsciiCharSequence, реализующий компактное хранение последовательности ASCII-символов (их коды влезают в один байт)
