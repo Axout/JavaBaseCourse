@@ -1,4 +1,4 @@
-package _4_1_Exception;
+package _4_1_Exception.Task1;
 
 /*
 Реализуйте метод sqrt(), вычисляющий квадратный корень числа.

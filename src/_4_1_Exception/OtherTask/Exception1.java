@@ -1,4 +1,4 @@
-package _4_1_Exception;
+package _4_1_Exception.OtherTask;
 
 import java.io.File;
 import java.io.FileNotFoundException;

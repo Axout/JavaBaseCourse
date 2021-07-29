@@ -1,4 +1,4 @@
-package _4_1_Exception;
+package _4_1_Exception.Task3;
 
 //интерфейс для управления роботом
 // Подключение к роботу представляется в программе интерфейсом RobotConnection:
