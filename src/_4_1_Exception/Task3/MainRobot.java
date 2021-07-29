@@ -1,45 +1,17 @@
 package _4_1_Exception.Task3;
 
-//интерфейс для управления роботом
-// Подключение к роботу представляется в программе интерфейсом RobotConnection:
-interface RobotConnection extends AutoCloseable{
-    void moveRobotTo(int x, int y);
-    @Override
-    void close() throws Exception;
-}
-//интерфейс для копирования исключений
-interface Dublicated{
-    public Dublicated dublic();
-}
-//класc исключения RobotConnectionException при подключении к роботу
-class RobotConnectionException extends RuntimeException implements Dublicated {
-    public RobotConnectionException() {
-        super();
-    }
-    @Override
-    public Dublicated dublic(){
-        return new RobotConnectionException();
-    }
-}
-//класc исключения отличный от RobotConnectionException при подключении к роботу
-class MyException extends RuntimeException implements Dublicated {
-    public MyException() {
-        super();
-    }
-    @Override
-    public Dublicated dublic() {
-        return new MyException();
-    }
-}
 public class MainRobot {
-    static int i; // переменная для перебора попыток полключений, что бы подключиться 3 раза
+    static int i; // переменная для перебора попыток подключений, что бы подключиться 3 раза
     static int repeatNumber; // переменная для перебора 27 вариантов различных ошибок из массива класса Test
+
     static public int getRepeatNumber(){
         return repeatNumber;
     }
+
     static public int getI(){
         return i;
     }
+
     public static void main(String args[])  {
         int toX = 1;
         int toY = 2;
@@ -62,6 +34,7 @@ public class MainRobot {
             }
         }
     }
+
     //метод который мы создаем для управления роботом (то что нужно для решения задачи)
     //Ваша задача — реализовать метод который устанавливает соединение с роботом,
     //отдает ему команду на перемещение в заданную точку и затем закрывает соединение,
@@ -70,6 +43,7 @@ public class MainRobot {
         robotConnectionManager.getConnection();
         
     }
+
     //класс создает объект для управления роботом
     //ошибка в соответсвии с массивом класса test выбрасываеться в 1 попытку подключения
     static class RobotConnectionManager {
